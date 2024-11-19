@@ -8,8 +8,8 @@ spec:
       description: The URL of the git repo
       default: " "
     - name: branch
-      description: The branch to process
-      default: "master"
+      description: The branch of the git repo
+      default: master
   resourcetemplates:
     - apiVersion: tekton.dev/v1beta1
       kind: PipelineRun

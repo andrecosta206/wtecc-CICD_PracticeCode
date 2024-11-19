@@ -32,13 +32,3 @@ spec:
       image: bitnami/git:latest
       command: [git]
       args: ["clone", "--branch", "$(params.branch)", "$(params.repo-url)"]
-apiVersion: tekton.dev/v1beta1
-kind: Task
-metadata:
-  name: hello-world
-spec:
-  steps:
-    - name: echo
-      image: alpine:3
-      command: [/bin/echo]
-      args: ["Hello world"]
